@@ -1,12 +1,15 @@
-use bevy::prelude::*;
+use std::time::Duration;
+
+use bevy::{app::ScheduleRunnerPlugin, prelude::*};
 use bevy_seedling::SeedlingPlugin;
 fn main() {
     //
-    App::new()
-        .add_plugins(MinimalPlugins.set(ScheduleRunnerPlugin::run_loop(
-            // Run 60 times per second.
-            Duration::from_secs_f64(1.0 / 60.0),
-        )))
-        .add_plugins(SeedlingPlugin)
-        .run();
+    let mut app = App::new();
+
+    app.add_plugins(DefaultPlugins);
+    #[cfg(feature = "native")]
+    app.add_plugins(SeedlingPlugin::default());
+    #[cfg(feature = "web")]
+    app.add_plugins(SeedlingPlugin::new_web_audio());
+    app.run();
 }
