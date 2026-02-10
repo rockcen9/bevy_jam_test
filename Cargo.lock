@@ -947,15 +947,12 @@ dependencies = [
  "bevy_framepace",
  "bevy_hanabi",
  "bevy_jornet",
- "bevy_prefab",
  "bevy_rand",
  "bevy_seedling",
  "bevy_shuffle_bag",
- "bevy_spatial",
  "bevy_tweening",
  "bevy_ui_anchor",
  "bitflags 2.10.0",
- "extol_sprite_layer",
  "getrandom 0.3.4",
  "heck",
  "pyri_tooltip",
@@ -1414,26 +1411,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "bevy_prefab"
-version = "0.1.0"
-dependencies = [
- "bevy",
- "bevy_prefab_derive",
- "inventory",
- "smol_str 0.3.5",
-]
-
-[[package]]
-name = "bevy_prefab_derive"
-version = "0.1.0"
-dependencies = [
- "inventory",
- "proc-macro2",
- "quote",
- "syn",
-]
-
-[[package]]
 name = "bevy_prng"
 version = "0.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1652,17 +1629,6 @@ checksum = "4208b7c5431bfa6894d29e874f0d94e2d24de0283049299e4087bf8caad134ae"
 dependencies = [
  "bevy",
  "rand",
-]
-
-[[package]]
-name = "bevy_spatial"
-version = "0.11.0"
-dependencies = [
- "bevy",
- "getrandom 0.3.4",
- "kd-tree",
- "num-traits",
- "typenum",
 ]
 
 [[package]]
@@ -2933,15 +2899,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "af9673d8203fcb076b19dfd17e38b3d4ae9f44959416ea532ce72415a6020365"
 
 [[package]]
-name = "extol_sprite_layer"
-version = "0.5.0"
-dependencies = [
- "bevy",
- "ordered-float",
- "tap",
-]
-
-[[package]]
 name = "fast-interleave"
 version = "0.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3899,18 +3856,6 @@ checksum = "8c942ebf8e95485ca0d52d97da7c5a2c387d0e7f0ba4c35e93bfcaee045955b3"
 dependencies = [
  "once_cell",
  "wasm-bindgen",
-]
-
-[[package]]
-name = "kd-tree"
-version = "0.6.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1e2adf615b2b7a38d0ec8a89b4f3c22e9e2820b1cc1c48c70e848fc83a8fb661"
-dependencies = [
- "num-traits",
- "ordered-float",
- "paste",
- "typenum",
 ]
 
 [[package]]
@@ -5923,12 +5868,6 @@ dependencies = [
  "serde",
  "slotmap",
 ]
-
-[[package]]
-name = "tap"
-version = "1.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "55937e1799185b12863d447f42597ed69d9928686b8d88a1df17376a097d8369"
 
 [[package]]
 name = "termcolor"

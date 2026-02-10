@@ -58,20 +58,15 @@ anyhow = "1"
 wasm-bindgen = { version = "=0.2.108", optional = true }
 
 bevy_hanabi = { version = "0.18", default-features = false, features = ["2d"] }
-extol_sprite_layer = { path = "../repomix_sources/extol_sprite_layer" }
 # bevy_tweening = { git = "https://github.com/jsnelling/bevy_tweening", rev = "0d3b0d098a67265ac5758e84810662e1e2edf679" }
 bevy_ecs_ldtk = "0.14"
 thiserror = "2.0.17"
-bevy_prefab = { path = "../repomix_sources/bevy_prefab" }
 heck = "0.5.0"
 bevy_rand = { version = "0.13", features = [
     "rand_chacha",
     "std",
 ], default-features = false }
 bevy_common_assets = { version = "0.15.0", features = ["csv"] }
-bevy_spatial = { path = "../repomix_sources/bevy-spatial", default-features = false, features = [
-    "kdtree",
-] }
 
 serde = "1.0.228"
 bevy_ui_anchor = { git = "https://github.com/cyrilleberger/bevy_ui_anchor/", rev = "86e7270a8d5e6e31a9d8c853322153860f262e7d" }
