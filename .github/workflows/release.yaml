@@ -102,6 +102,7 @@ jobs:
         uses: dtolnay/rust-toolchain@nightly
         with:
           targets: wasm32-unknown-unknown
+          components: rust-src
 
       - name: Restore Rust cache
         if: ${{ github.event_name == 'push' }}
